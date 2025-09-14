@@ -1,0 +1,136 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Background Gradient */
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+
+  /* Center content horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* Padding around content */
+  padding: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Reset heading & paragraph spacing */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== App Container ===== */
+.App {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 80vh;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.app-header p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* ===== Form & Input ===== */
+.form-container {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #74b9ff;
+  box-shadow: 0 0 5px rgba(116,185,255,0.5);
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.02);
+}
+
+/* ===== Card Styling (Neighborhoods) ===== */
+.neighborhood-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  max-width: 600px;
+  transition: transform 0.2s;
+}
+
+.neighborhood-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
